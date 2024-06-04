@@ -147,6 +147,10 @@ img
 {
 	margin: 0 0 10px !important;
 }
+img.skill
+{
+	margin: 10px 0 !important;
+}
 #container
 {
 	width: 1000px;
@@ -195,6 +199,13 @@ p.sp12
 	font-size: 12px;
 	color: gray;
 }
+p.sp12t
+{
+	margin: 5px 10px;
+	text-align: left;
+	font-size: 12px;
+	color: gray;
+}
 p.sp12m
 {
 	margin: 0 0 0 10px;
@@ -221,11 +232,74 @@ p.sp20
 	font-size: 20px;
 	color: gray;
 }
+font.number
+{
+	color: #3282f6;
+	font-weight: bold;
+}
+
+/* 表用 */
+table
+{
+	margin : 10px 0;
+	border-collapse: collapse;
+	border-spacing: 0;
+	width: 100%;
+}
+
+table tr
+{
+	border-bottom: solid 1px #eee;
+}
+table th.img
+{
+	vertical-align: middle;
+	width: 10%;
+	padding: 7px 0;
+}
+table th.genre
+{
+	vertical-align: middle;
+	width: 17%;
+	padding: 7px 0;
+}
+table th.evaluation
+{
+	vertical-align: middle;
+	width: 8%;
+	padding: 7px 0;
+}
+table th.skill
+{
+	vertical-align: middle;
+	width: 20%;
+	padding: 7px 0;
+}
+table th.effect
+{
+	vertical-align: middle;
+	width: 45%;
+	padding: 7px 0;
+}
 /* 更新履歴用 */
 .log
 {
 	height: 200px;
 	border: 1px solid #eee;
 	box-shadow:0 0 5px #ddd;
-	overflow: scroll;
+	overflow-y: scroll;
+}
+.effect_ex
+{
+	height: 150px;
+	border: 1px solid #eee;
+	box-shadow:0 0 5px #ddd;
+	overflow-y: scroll;
+}
+.effect_exb
+{
+	height: 70px;
+	border: 1px solid #eee;
+	box-shadow:0 0 5px #ddd;
+	overflow-y: scroll;
 }
