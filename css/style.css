@@ -260,7 +260,7 @@ table th.img
 table th.genre
 {
 	vertical-align: middle;
-	width: 17%;
+	width: 18%;
 	padding: 7px 0;
 }
 table th.evaluation
@@ -278,7 +278,7 @@ table th.skill
 table th.effect
 {
 	vertical-align: middle;
-	width: 45%;
+	width: 44%;
 	padding: 7px 0;
 }
 /* 更新履歴用 */

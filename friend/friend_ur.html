@@ -1,0 +1,1071 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<title>魔法陣グルグル ほしくず大冒険(グルスタ) help</title>
+		<meta charset="utf-8">
+		<link rel="apple-touch-icon" type="image/png" href="../img/apple-touch-icon-180x180.png">
+		<link rel="icon" type="image/png" href="../img/icon-192x192.png">
+		<link rel="stylesheet" href="../css/style.css?2406302300">
+		<link rel="stylesheet" href="../css/bootstrap.min.3.3.4.css">
+		<script src="../js/jquery-3.5.1.min.js"></script>
+		<script src="../js/zoomsl.min.js"></script>
+		<script src="../js/table-sort.js"></script>
+		<style>
+			.round-loope{
+				border-radius: 75px;
+				border: 5px solid #F0F0F0;
+			}
+		</style>
+	</head>
+	
+	<body>
+		<div id="container">
+			<header>
+				<p><a href="../index.html"><img src="../img/logo.png"></a></p>
+				<div id="tab_menu">
+					<div class="begin">
+						<p class="tab_menu_p"><a href="../begin.html">初めに</a></p>
+					</div>
+					<div class="home">
+						<p class="tab_menu_p"><a href="../home.html">ホーム(未)</a></p>
+					</div>
+					<div class="hero">
+						<p class="tab_menu_p"><a href="../hero.html">主人公</a></p>
+					</div>
+					<div class="friend">
+						<p class="tab_menu_p"><a href="../friend.html">お友達</a></p>
+					</div>
+					<div class="battle">
+						<p class="tab_menu_p"><a href="../battle.html">戦闘(未)</a></p>
+					</div>
+					<div class="support">
+						<p class="tab_menu_p"><a href="../support.html">サポート(未)</a></p>
+					</div>
+					<div class="guild">
+						<p class="tab_menu_p"><a href="../guild.html">ギルド(未)</a></p>
+					</div>
+					<div class="forging">
+						<p class="tab_menu_p"><a href="../forging.html">鍛造(未)</a></p>
+					</div>
+				</div>
+			</header>
+			
+			<hr>
+			
+			<div id="explanation">
+				<div class="explanation_in">
+					<p class="sp20" id="ur">～ UR(最大Lv.300) ～</p>
+					<p class="sp12">URのスキルは次の通りです。</p>
+					<p class="sp12">▶ 通常攻撃 / スキルx2 / 専用スキル / 星UPスキル / 基礎スキルx8</p>
+					<br>
+					<p class="sp12">星UPスキルと基礎スキルは職業によって異なります。</p>
+					<table>
+						<tr>
+							<th><p class="sp12t">職業</p></th>
+							<th><p class="sp12t">星UPスキル</p></th>
+							<th><p class="sp12t">基礎スキル</p></th>
+						</tr>
+						<tr>
+							<td>
+								<p class="sp12t">ダメージ</p>
+								<p class="sp12t">　攻撃力+25% / 命中率+10%</p>
+								<p class="sp12t">　会心率+10% / 会心ダメージ+10%</p>
+							</td>
+							<td><p class="sp12t">戦闘魔法</p></td>
+							<td>
+								<p class="sp12t">攻撃力 / 防御力 / 生命値 / 会心</p>
+								<p class="sp12t">中級攻撃 / 中級生命値 / 中級防御力 / 中級強打</p>
+							</td>
+						</tr>
+						<!--
+						<tr>
+							<td>
+								<p class="sp12t">タンク</p>
+								<p class="sp12t">　生命値+25% / 防御力+25%</p>
+								<p class="sp12t">　会心耐性+10% / 会心ダメージ-20%</p>
+							</td>
+							<td><p class="sp12t">支援魔法</p></td>
+							<td>
+								<p class="sp12t">生命値 / 防御力 / 攻撃力 / 会心耐性</p>
+							</td>
+						</tr>
+						-->
+						<tr>
+							<td>
+								<p class="sp12t">回復</p>
+								<p class="sp12t">　回復効果+25% / 攻撃力+10%</p>
+								<p class="sp12t">　会心率+10%</p>
+							</td>
+							<td><p class="sp12t">祈願魔法</p></td>
+							<td>
+								<p class="sp12t">攻撃力 / 防御力 / 生命値 / 回復</p>
+								<p class="sp12t">中級強打 / 中級治癒 / 中級回復 / 中級攻撃</p>
+							</td>
+						</tr>
+					</table>
+					<br>
+					<p class="sp12">各お友達の属性、職業、評価値はコチラ。テーブルヘッダーを押すとソートできます。</p>
+					<table id="sort_table">
+						<tr>
+							<th><p class="sp12t">お友達</p></th>
+							<th><p class="sp12t">属性</p></th>
+							<th><p class="sp12t">職業</p></th>
+							<th><p class="sp12t">評価値</p></th>
+						</tr>
+						<tr>
+							<td><p class="sp12t">グリエル</p></td>
+							<td><p class="sp12t">心</p></td>
+							<td><p class="sp12t">回復(範囲解除)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">ジュジュ</p></td>
+							<td><p class="sp12t">技</p></td>
+							<td><p class="sp12t">ダメージ(単体攻撃)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">ニケ</p></td>
+							<td><p class="sp12t">心</p></td>
+							<td><p class="sp12t">ダメージ(範囲ダメ増)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">ニケ(ケモミミ)</p></td>
+							<td><p class="sp12t">体</p></td>
+							<td><p class="sp12t">ダメージ(単体強打)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">プラナノ(幼女)</p></td>
+							<td><p class="sp12t">技</p></td>
+							<td><p class="sp12t">回復(範囲回復)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">ワンチン</p></td>
+							<td><p class="sp12t">体</p></td>
+							<td><p class="sp12t">回復(範囲補助)</p></td>
+							<td><p class="sp12t">60170</p></td>
+						</tr>
+						<!--
+						<tr>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+						</tr>
+						-->
+					</table>
+					<br>
+					<p class="sp12">同じ属性のキャラを2体以上編成するとバフが付与されます。</p>
+					<table>
+						<tr>
+							<th><p class="sp12t">属性</p></th>
+							<th><p class="sp12t">効果</p></th>
+							<th><p class="sp12t">効果説明</p></th>
+							<th><p class="sp12t">所持お友達</p></th>
+						</tr>
+						<tr>
+							<td><p class="sp12t">技</p></td>
+							<td><p class="sp12t">技法の力</p></td>
+							<td>
+								<div class="effect_exb">
+									<p class="sp12t">
+										・技属性を2人編成<br>
+										ダメ増加<font class="number">+10%</font>、ダメージ軽減<font class="number">+10%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・技属性を3人編成<br>
+										ダメ増加<font class="number">+20%</font>、ダメージ軽減<font class="number">+20%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・技属性を4人編成<br>
+										ダメ増加<font class="number">+25%</font>、ダメージ軽減<font class="number">+25%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・技属性を5人編成<br>
+										ダメ増加<font class="number">+30%</font>、ダメージ軽減<font class="number">+30%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・技属性を6人編成<br>
+										ダメ増加<font class="number">+40%</font>、ダメージ軽減<font class="number">+40%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・技属性を8人編成<br>
+										ダメ増加<font class="number">+50%</font>、ダメージ軽減<font class="number">+50%</font>、会心率<font class="number">+10%</font>
+									</p>
+								</div>
+							</td>
+							<td>
+								<p class="sp12t">
+									<div class="effect_exb">
+										<p class="sp12t">
+											ジュジュ<br>
+											プラナノ(幼女)
+										</p>
+									</div>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">心</p></td>
+							<td><p class="sp12t">思想の力</p></td>
+							<td>
+								<div class="effect_exb">
+									<p class="sp12t">
+										・心属性を2人編成<br>
+										ダメ増加<font class="number">+10%</font>、ダメージ軽減<font class="number">+10%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・心属性を3人編成<br>
+										ダメ増加<font class="number">+20%</font>、ダメージ軽減<font class="number">+20%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・心属性を4人編成<br>
+										ダメ増加<font class="number">+25%</font>、ダメージ軽減<font class="number">+25%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・心属性を5人編成<br>
+										ダメ増加<font class="number">+30%</font>、ダメージ軽減<font class="number">+30%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・心属性を6人編成<br>
+										ダメ増加<font class="number">+40%</font>、ダメージ軽減<font class="number">+40%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・心属性を8人編成<br>
+										ダメ増加<font class="number">+50%</font>、ダメージ軽減<font class="number">+50%</font>、会心率<font class="number">+10%</font>
+									</p>
+								</div>
+							</td>
+							<td>
+								<p class="sp12t">
+									<div class="effect_exb">
+										<p class="sp12t">
+											グリエル<br>
+											ニケ
+										</p>
+									</div>
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><p class="sp12t">体</p></td>
+							<td><p class="sp12t">本能の力</p></td>
+							<td>
+								<div class="effect_exb">
+									<p class="sp12t">
+										・体属性を2人編成<br>
+										ダメ増加<font class="number">+10%</font>、ダメージ軽減<font class="number">+10%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・体属性を3人編成<br>
+										ダメ増加<font class="number">+20%</font>、ダメージ軽減<font class="number">+20%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・体属性を4人編成<br>
+										ダメ増加<font class="number">+25%</font>、ダメージ軽減<font class="number">+25%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・体属性を5人編成<br>
+										ダメ増加<font class="number">+30%</font>、ダメージ軽減<font class="number">+30%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・体属性を6人編成<br>
+										ダメ増加<font class="number">+40%</font>、ダメージ軽減<font class="number">+40%</font>
+									</p>
+									<hr>
+									<p class="sp12t">
+										・体属性を8人編成<br>
+										ダメ増加<font class="number">+50%</font>、ダメージ軽減<font class="number">+50%</font>、会心率<font class="number">+10%</font>
+									</p>
+								</div>
+							</td>
+							<td>
+								<p class="sp12t">
+									<div class="effect_exb">
+										<p class="sp12t">
+											ニケ(ケモミミ)<br>
+											ワンチン
+										</p>
+									</div>
+								</p>
+							</td>
+						</tr>
+						<!--
+						<tr>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+							<td><p class="sp12t"></p></td>
+						</tr>
+						-->
+					</table>
+					<hr>
+					<p class="sp16" id="gurieru">・グリエル(60170) / 心属性 / 回復(範囲解除)</p>
+					<p class="sp12">入手方法 ▶ 指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(1巻)第8章「ノコギリ山の洞窟・2」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 1期 5話-B「ノコギリ山でダンジョン探検」 / 3期 2話-A「踊れ！キタの町！」</p>
+					<img src="../img/friend/ur/gurieru.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_01_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_01_yosei_sasayaki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">妖精の囁き<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方2体の生命値を<font class="number">204.8%+21060</font>回復する。さらに攻撃力<font class="number">+15%</font>、効果<font class="number">3</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_01_hot_snack.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">ホットスナック<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方6体の生命値を<font class="number">108%+10800</font>回復する。さらに【火傷】効果(毎ターン、攻撃力<font class="number">15%</font>相当のダメージ)を与える、効果<font class="number">2</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_01_syunbin_no_reikon.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">俊敏の霊魂br>最大Lv.15</p></td>
+							<td><p class="sp12t">ランダムな味方<font class="number">4</font>体の攻撃力<font class="number">+12%</font>。自身が戦闘不能時、最も攻撃力が高い味方<font class="number">4</font>体が即時行動する。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/kito_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">祈願魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									回復効果<font class="number">+20%</font><br>
+									自身の累計回復量が自身の生命値上限<font class="number">50%</font>になるごとに、ボスに被ダメージ<font class="number">+20%</font>を与える、効果<font class="number">1</font>ターン。<br>
+									自身の累計回復量が自身の生命値上限<font class="number">100%</font>になるごとに、ボスに<font class="number">150%</font>のダメージを与える。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_chiyu.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級治癒<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+					<hr>
+					<p class="sp16" id="juju">・ジュジュ(60170) / 技属性 / ダメージ(単体攻撃)</p>
+					<p class="sp12">入手方法 ▶ 指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(3巻)第20章「降神祭」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 1期 16話-A「魔王降臨！シュギ村絶体絶命」 / 3期 4話-C「おでかけ！修行ハウス！」</p>
+					<img src="../img/friend/ur/juju.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_02_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_02_mayakashi_no_uzu.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">まやかしの渦<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も攻撃力が高い敵に<font class="number">157.5%+16200</font>のダメージと混乱を与える、効果2ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_02_seisui_no_chikara.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">聖水の力<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も攻撃力の高い敵に<font class="number">180%+18000</font>のダメージを与える。相手が【混乱】状態の場合、今回のダメージ<font class="number">+50%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_02_maho_tenpu.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">魔法天賦<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵全体の被ダメージ<font class="number">+12%</font>。毎ターン開始時、<font class="number">40%</font>の確率でランダムな敵3体に【混乱】を与える、効果1ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/sento_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">戦闘魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時の最終ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時に<font class="number">150%</font>のダメージを与える
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaishin.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">会心<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、会心率<font class="number">+5%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+15%</font>、会心耐性<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+15%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+					<hr>
+					<p class="sp16" id="nike">・ニケ(60170) / 心属性 / ダメージ(範囲ダメ増)</p>
+					<p class="sp12">入手方法 ▶ 指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(1巻)第1章「ジミナ村」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 1期 1話-A「旅立ち！ニケとククリの大冒険」 / 3期 1話-A「旅立ち！ジミナ村！」</p>
+					<img src="../img/friend/ur/nike.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_03_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_03_kushizashi.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">串刺し<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵1体に<font class="number">157.5%+16200</font>のダメージを与える。主人公『ボス？』を優先的に攻撃する。ランダムな味方<font class="number">3</font>体の攻撃力<font class="number">+12%</font>、効果2ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_03_yusya_no_ken.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">勇者の剣<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵1体に<font class="number">180%+18000</font>のダメージを与える。主人公『ボス？』を優先的に攻撃、主人公『ボス？』には攻撃力<font class="number">17%</font>の継続ダメージを与える、効果2ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_03_koun_no_ichigeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">幸運の一撃br>最大Lv.15</p></td>
+							<td><p class="sp12t">味方全体の会心率<font class="number">+8%</font>、攻撃力<font class="number">+10%</font>。毎ターン終了時、最も攻撃力が高い敵1体に<font class="number">20%</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/sento_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">戦闘魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時の最終ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時に<font class="number">150%</font>のダメージを与える
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaishin.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">会心<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、会心率<font class="number">+5%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+15%</font>、会心耐性<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+15%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+					<hr>
+					<p class="sp16" id="nike_kemomimi">・ニケ(ケモミミ)(60170) / 体属性 / ダメージ(単体強打)</p>
+					<p class="sp12">入手方法 ▶ 指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(9巻)第74章「アラハビカの町②」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 2期 26話-B「あらあらたいへんアラハビカ！」 / 3期 13話-B「伝説！イエタ村！」</p>
+					<img src="../img/friend/ur/nike_kemomimi.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_04_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_04_giso_no_ichigeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">偽装の一撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い敵1体に<font class="number">157.5%+16200</font>のダメージを与える。相手の会心耐性<font class="number">-17%</font>、効果2ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_04_ikari.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">怒り<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い敵1体に<font class="number">180%+18000</font>のダメージを与える。相手のダメージ軽減<font class="number">-12.5%</font>、効果2ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_04_mazoku_no_syonen.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">魔族の少年<br>最大Lv.15</p></td>
+							<td><p class="sp12t">味方全体の攻撃力<font class="number">+12%</font>。攻撃で会心が発生時、連撃1回、通常攻撃の<font class="number">70%</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/sento_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">戦闘魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時の最終ダメージ<font class="number">+20%</font><br>
+									ボス攻撃時に<font class="number">150%</font>のダメージを与える
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaishin.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">会心<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、会心率<font class="number">+5%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+15%</font>、会心耐性<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+15%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+					<hr>
+					<p class="sp16" id="puranano_yojo">・プラナノ(幼女)(60170) / 技属性 / 回復(範囲回復)</p>
+					<p class="sp12">入手方法 ▶ 指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(12巻)第105章「ククリ ママになる」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 3期 18話-B「咲け！花の国！」</p>
+					<img src="../img/friend/ur/puranano_yojo.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_05_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_05_player.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">プレイヤー<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方<font class="number">3</font>体の生命値を<font class="number">157.5%+16200</font>回復する。さらに攻撃力<font class="number">+12%</font>、効果<font class="number">3</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_05_hatsuga.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">発芽<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方6体の生命値を攻撃力<font class="number">108%+10800</font>相当回復する。さらに【萌芽の力】効果(次の攻撃時にダメージ<font class="number">+8.5%</font>)を与える、効果<font class="number">2</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_05_happa_soko.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">葉っぱ装甲<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が高い味方<font class="number">3</font>体の生命値上限<font class="number">+12%</font>、被回復効果<font class="number">+20%</font>。自身が回復時、【反撃】効果(単体攻撃を受けた時、通常攻撃の<font class="number">60%</font>のダメージを与える)を獲得する、効果1ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/kito_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">祈願魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									回復効果<font class="number">+20%</font><br>
+									自身の累計回復量が自身の生命値上限<font class="number">50%</font>になるごとに、ボスに被ダメージ<font class="number">+20%</font>を与える、効果<font class="number">1</font>ターン。<br>
+									自身の累計回復量が自身の生命値上限<font class="number">100%</font>になるごとに、ボスに<font class="number">150%</font>のダメージを与える。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_chiyu.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級治癒<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、防御力<font class="number">+10%</font></p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+					<hr>
+					<p class="sp16" id="wanchin">・ワンチン(60170) / 体属性 / 回復(範囲補助)</p>
+					<p class="sp12">入手方法 ▶  指定お友達召喚 / 指定属性お友達召喚 / URオーブ / 魔法召喚</p>
+					<p class="sp12">漫画登場箇所　 ▶ 魔法陣グルグル(4巻)第31章「勇者のひみつ」</p>
+					<p class="sp12">アニメ登場箇所 ▶ 1期 30話-B 「発見！礼拝堂に残された遺産」 / 3期 7話-B「発見！妖精の村！」</p>
+					<img src="../img/friend/ur/wanchin.jpg" width="655px">
+					<table>
+						<tr>
+							<th class="img"><p class="sp12t">画像</p></th>
+							<th class="genre"><p class="sp12t">ジャンル</p></th>
+							<th class="evaluation"><p class="sp12t">評価</p></th>
+							<th class="skill"><p class="sp12t">スキル名</p></th>
+							<th class="effect"><p class="sp12t">効果</p></th>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_06_tsujokogeki.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>通常攻撃</p></td>
+							<td><p class="sp12t">850</p></td>
+							<td><p class="sp12t">通常攻撃<br>最大Lv.15</p></td>
+							<td><p class="sp12t">敵単体に<font class="number">90%+9000</font>のダメージを与える。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_06_kago.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1063</p></td>
+							<td><p class="sp12t">加護<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方2体の生命値を<font class="number">204.8%+21060</font>回復する。さらに会心率<font class="number">+20%</font>、効果<font class="number">3</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_06_ko_no_ai.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>スキル</p></td>
+							<td><p class="sp12t">1275</p></td>
+							<td><p class="sp12t">古の愛<br>最大Lv.15</p></td>
+							<td><p class="sp12t">最も生命値が低い味方6体の生命値を<font class="number">108%+10800</font>回復する。さらに攻撃力<font class="number">+10%</font>、効果<font class="number">2</font>ターン。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kotei/ur/ur_06_gugenka_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>専用スキル</p></td>
+							<td><p class="sp12t">531</p></td>
+							<td><p class="sp12t">具現化魔法<br>最大Lv.15</p></td>
+							<!-- TODO 攻撃陣ってなんやねん -->
+							<td><p class="sp12t">ランダムな味方4体の会心ダメージ<font class="number">+22%</font>、攻撃力<font class="number">+10%</font>。毎ターン最も攻撃力が高い味方に【必殺】効果(攻撃陣『時』のダメージ<font class="number">+150%</font>)を与える、効果1ターン</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/hoshi/kito_maho.png" width="60px"></td>
+							<td><p class="sp12t">固定<br>星UPスキル</p></td>
+							<td><p class="sp12t">10250</p></td>
+							<td><p class="sp12t">祈願魔法<br>最大Lv.20</p></td>
+							<td>
+								<p class="sp12t">
+									・PvE時、以下の能力を獲得<br>
+									回復効果<font class="number">+20%</font><br>
+									自身の累計回復量が自身の生命値上限<font class="number">50%</font>になるごとに、ボスに被ダメージ<font class="number">+20%</font>を与える、効果<font class="number">1</font>ターン。<br>
+									自身の累計回復量が自身の生命値上限<font class="number">100%</font>になるごとに、ボスに<font class="number">150%</font>のダメージを与える。
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kogekiryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">攻撃力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+6%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/bogyoryoku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">防御力<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、防御力<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/seimeichi.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">生命値<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">450</p></td>
+							<td><p class="sp12t">回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kyoda.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級強打<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、会心率<font class="number">+8%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_chiyu.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級治癒<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、防御力<font class="number">+10%</font></p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kaifuku.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級回復<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、回復効果<font class="number">+15%</font>、生命値<font class="number">+10%</font>。</p></td>
+						</tr>
+						<tr>
+							<td><img class="skill" src="../img/skill/kiso/chukyu_kogeki.png" width="60px"></td>
+							<td><p class="sp12t">入替可<br>基礎スキル</p></td>
+							<td><p class="sp12t">900</p></td>
+							<td><p class="sp12t">中級攻撃<br>最大Lv.5</p></td>
+							<td><p class="sp12t">戦闘開始後、攻撃力<font class="number">+10%</font>、命中率<font class="number">+8%</font>。</p></td>
+						</tr>
+					</table>
+				</div>
+				
+				<div class="explanation_menu">
+					<nav>
+						<p class="sp16"><a href="../friend.html#friend">・お友達</a></p>
+						<p class="sp16"><a href="friend_sr.html#sr">・SR</a></p>
+						<p class="sp16"><a href="friend_ssr.html#ssr">・SSR</a></p>
+						<p class="sp16"><a href="friend_sssr.html#sssr">・SSSR</a></p>
+						<p class="sp16"><a href="#ur">・UR</a></p>
+						<p class="sp12m">
+							<a href="#gurieru">グリエル</a> / <a href="#juju">ジュジュ</a> / <a href="#nike">ニケ</a>
+						</p>
+						<p class="sp12m">
+							<a href="#nike_kemomimi">ニケ(ケモミミ)</a> / <a href="#puranano_yojo">プラナノ(幼女)</a>
+						</p>
+						<p class="sp12e">
+							<a href="#wanchin">ワンチン</a>
+						</p>
+						<p class="sp16"><a href="friend_lr.html#lr">・LR</a></p>
+						<!--
+						<p class="sp16"><a href="../#">・</a></p>
+						<p class="sp16"><a href="../#">・</a></p>
+						<p class="sp16"><a href="../#">・</a></p>
+						<p class="sp16"><a href="../#">・</a></p>
+						<p class="sp16"><a href="../#">・</a></p>
+						-->
+					</nav>
+				</div>
+			</div>
+			
+			<hr>
+			
+			<div id="use_tool">
+				<p>Use Tools</p>
+				<p>
+					<a href="https://getbootstrap.jp/">bootstrap</a> /
+					<a href="https://www.jqueryscript.net/zoom/Stylish-Magnifying-Glass-Plugin-SergeLand-Image-Zoomer.html">SergeLand Image Zoomer</a> /
+					<a href="https://blog.ver001.com/javascript-table-sort/">table-sort &copy;2022 totchira</a>
+				</p>
+			</div>
+			
+			<hr>
+			
+			<div id="game_play">
+				<p>魔法陣グルグル ほしくず大冒険のプレイは『<a href="https://h5.g123.jp/game/guruguru">コチラ</a>』からどうぞ</p>
+			</div>
+			
+			<hr>
+			
+			<footer>
+				<p>&copy;衛藤ヒロユキ／SQUARE ENIX・「魔法陣グルグル」製作委員会</p>
+				<p>&copy;CTW INC. All rights reserved.</p>
+			</footer>
+		</div>
+		
+		<script>
+			$(function(){
+				$(".zoomsl-img").imagezoomsl({
+					classmagnifier: window.external ? "round-loope" : "",	//CSSで拡大枠の形状を変更
+					cursorshadeborder: "10px solid #000",					//カーソル枠の太さ・形状・色
+					innerzoommagnifier: true,								//インナーズームの別バージョン
+					loopspeedanimate: 5,									//カーソルの追従速度
+					magnifierborder: "none",								//カーソル枠の有無
+					magnifiersize: [500, 500],								//拡大画像のサイズ。絶対値
+					scrollspeedanimate: 10,									//カーソル移動時の拡大画像の追従速度
+					zoomrange: [1, 10],										//ズームのレンジ 1-10倍
+					zoomstart: 4,											//ズームの開始値
+					innerzoom: false
+				});
+			});
+		</script>
+	</body>
+</html>
+
